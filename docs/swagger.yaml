@@ -1,0 +1,77 @@
+definitions:
+  routers.Info:
+    properties:
+      message:
+        type: string
+      ok:
+        type: boolean
+    type: object
+  routers.JSONResult:
+    properties:
+      code:
+        type: integer
+      data: {}
+      info:
+        $ref: '#/definitions/routers.Info'
+    type: object
+info:
+  contact: {}
+  description: This is a Free-SS API, contain interfaces such as SS/SSR.
+  title: Free-SS.site API
+  version: "1.0"
+paths:
+  /:
+    get:
+      parameters:
+      - default: data2.php
+        description: data.php页面
+        in: query
+        name: php
+        type: string
+      - default: 1
+        description: 版本
+        in: query
+        name: v
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/routers.JSONResult'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/routers.JSONResult'
+      summary: 获取 ssr 订阅
+      tags:
+      - SS/SSR
+  /json:
+    get:
+      parameters:
+      - default: data2.php
+        description: data.php页面
+        in: query
+        name: php
+        type: string
+      - default: 1
+        description: 版本
+        in: query
+        name: v
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/routers.JSONResult'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/routers.JSONResult'
+      summary: 获取 free-ss.site
+      tags:
+      - SS/SSR
+swagger: "2.0"

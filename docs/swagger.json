@@ -1,0 +1,118 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "This is a Free-SS API, contain interfaces such as SS/SSR.",
+        "title": "Free-SS.site API",
+        "contact": {},
+        "version": "1.0"
+    },
+    "paths": {
+        "/": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "SS/SSR"
+                ],
+                "summary": "获取 ssr 订阅",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "default": "data2.php",
+                        "description": "data.php页面",
+                        "name": "php",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "default": 1,
+                        "description": "版本",
+                        "name": "v",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/routers.JSONResult"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/routers.JSONResult"
+                        }
+                    }
+                }
+            }
+        },
+        "/json": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "SS/SSR"
+                ],
+                "summary": "获取 free-ss.site",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "default": "data2.php",
+                        "description": "data.php页面",
+                        "name": "php",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "default": 1,
+                        "description": "版本",
+                        "name": "v",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/routers.JSONResult"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/routers.JSONResult"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "routers.Info": {
+            "type": "object",
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "ok": {
+                    "type": "boolean"
+                }
+            }
+        },
+        "routers.JSONResult": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "integer"
+                },
+                "data": {},
+                "info": {
+                    "$ref": "#/definitions/routers.Info"
+                }
+            }
+        }
+    }
+}
