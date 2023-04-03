@@ -38,13 +38,13 @@ require (
 	github.com/sirupsen/logrus v1.9.0
 	github.com/spf13/cast v1.5.0
 	github.com/swaggo/gin-swagger v1.3.0
-	github.com/swaggo/swag v1.8.11
+	github.com/swaggo/swag v1.8.12
 	github.com/ugorji/go/codec v1.2.9 // indirect
 	github.com/unknwon/com v1.0.1
-	golang.org/x/net v0.7.0 // indirect
-	golang.org/x/sys v0.5.0 // indirect
-	golang.org/x/text v0.7.0 // indirect
-	golang.org/x/tools v0.1.12 // indirect
+	golang.org/x/net v0.8.0 // indirect
+	golang.org/x/sys v0.6.0 // indirect
+	golang.org/x/text v0.8.0 // indirect
+	golang.org/x/tools v0.7.0 // indirect
 	gopkg.in/alecthomas/kingpin.v2 v2.2.6
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
