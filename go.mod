@@ -38,7 +38,7 @@ require (
 	github.com/sirupsen/logrus v1.9.0
 	github.com/spf13/cast v1.5.0
 	github.com/swaggo/gin-swagger v1.3.0
-	github.com/swaggo/swag v1.8.12
+	github.com/swaggo/swag v1.16.1
 	github.com/ugorji/go/codec v1.2.9 // indirect
 	github.com/unknwon/com v1.0.1
 	golang.org/x/net v0.8.0 // indirect
