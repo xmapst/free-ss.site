@@ -11,8 +11,7 @@ require (
 	github.com/alecthomas/units v0.0.0-20201120081800-1786d5ef83d4 // indirect
 	github.com/anaskhan96/soup v1.2.5
 	github.com/andybalholm/cascadia v1.1.0 // indirect
-	github.com/bitly/go-simplejson v0.5.0
-	github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869 // indirect
+	github.com/bitly/go-simplejson v0.5.1
 	github.com/dlclark/regexp2 v1.4.0 // indirect
 	github.com/dop251/goja v0.0.0-20210111190058-952c20e23c35
 	github.com/gin-contrib/gzip v0.0.6
