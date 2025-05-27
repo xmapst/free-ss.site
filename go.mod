@@ -18,7 +18,7 @@ require (
 	github.com/dop251/goja v0.0.0-20210111190058-952c20e23c35
 	github.com/gin-contrib/gzip v1.2.3
 	github.com/gin-contrib/sse v1.0.0 // indirect
-	github.com/gin-gonic/gin v1.10.0
+	github.com/gin-gonic/gin v1.10.1
 	github.com/go-openapi/jsonpointer v0.19.5 // indirect
 	github.com/go-openapi/jsonreference v0.19.6 // indirect
 	github.com/go-openapi/spec v0.20.4 // indirect
